@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.edsonchimuco.upline",
+      "sha256_cert_fingerprints": [
+        "3A:48:D6:4E:C9:78:0A:DD:4E:C1:26:60:1F:F2:20:D6:11:E7:8C:39:17:DB:FA:91:8C:20:69:6A:F0:D5:3D:DA"
+      ]
+    }
+  }
+]
