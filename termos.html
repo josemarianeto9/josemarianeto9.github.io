@@ -5,57 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termos de Uso - Inpaup</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        .container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { color: #2BB673; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #2BB673; margin-top: 30px; }
-        .date { font-style: italic; color: #666; font-size: 0.9em; }
-        ul { margin-top: 0; }
-        li { margin-bottom: 8px; }
+        :root {
+            --primary-green: #2BB673;
+            --bg-color: #f4f7f6;
+            --text-main: #333333;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: -30px auto 40px auto;
+            background-color: var(--card-bg);
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        h2 {
+            color: var(--primary-green);
+            border-bottom: 2px solid #eef7f2;
+            padding-bottom: 10px;
+            margin-top: 35px;
+            font-size: 1.4em;
+        }
+        .date {
+            text-align: right;
+            font-style: italic;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        ul li:before {
+            content: '●';
+            color: var(--primary-green);
+            font-weight: bold;
+            font-size: 1em;
+            position: absolute;
+            left: 5px;
+            top: 0;
+        }
+        .warning-box {
+            background-color: #fff9e6;
+            border-left: 5px solid #ffcc00;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 25px;
+            }
+            .header {
+                padding: 30px 20px 50px 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Termos de Uso</h1>
-        <p class="date">Última atualização: 15 de Dezembro de 2025</p>
-        
-        <p>Bem-vindo à inpaup! Ao utilizar a nossa plataforma, concorda com estes Termos de Uso. O nosso objetivo é criar um ambiente seguro, produtivo e envolvente para todos.</p>
-
-        <h2>1. Aceitação dos Termos</h2>
-        <p>Ao criar uma conta na inpaup, concorda em cumprir estes termos e todas as leis aplicáveis. Se não concordar com algum destes termos, não deverá utilizar a aplicação.</p>
-
-        <h2>2. Conta e Segurança</h2>
-        <ul>
-            <li>Você é responsável por manter a confidencialidade da sua conta e palavra-passe.</li>
-            <li>Deve fornecer informações verdadeiras e precisas no seu perfil.</li>
-            <li>A criação de contas falsas ou a usurpação de identidade é estritamente proibida e resultará no banimento imediato.</li>
-        </ul>
-
-        <h2>3. Regras da Comunidade e Conduta</h2>
-        <p>Para manter a inpaup segura, NÃO é permitido:</p>
-        <ul>
-            <li>Publicar conteúdo ilegal, violento, pornográfico ou que promova o discurso de ódio.</li>
-            <li>Assediar, intimidar ou ameaçar outros utilizadores em grupos ou mensagens privadas.</li>
-            <li>Enviar spam ou mensagens não solicitadas (inundar grupos ou chats).</li>
-            <li>Tentar manipular o sistema de reputação ou rankings da plataforma de forma fraudulenta.</li>
-        </ul>
-
-        <h2>4. Grupos e Alianças</h2>
-        <ul>
-            <li>Os criadores de grupos (Reis/Rainhas) são responsáveis por moderar o conteúdo das suas comunidades.</li>
-            <li>As Alianças entre grupos são estabelecidas democraticamente. Caso um grupo decida encerrar uma aliança, o feed partilhado será automaticamente desvinculado.</li>
-            <li>A plataforma reserva-se o direito de intervir ou encerrar grupos que violem repetidamente as regras do sistema.</li>
-        </ul>
-
-        <h2>5. Conteúdo do Utilizador</h2>
-        <ul>
-            <li>Você mantém os direitos de autor sobre o conteúdo (textos, fotos, vídeos) que publica.</li>
-            <li>Ao publicar, concede à inpaup uma licença mundial, não exclusiva e gratuita para exibir, distribuir e promover esse conteúdo dentro da plataforma.</li>
-            <li>Você é o único responsável pelo conteúdo que partilha e pelas consequências da sua publicação.</li>
-        </ul>
-
-        <h2>6. Rescisão</h2>
-        <p>Podemos suspender ou terminar a sua conta a qualquer momento, sem aviso prévio, se acreditarmos que violou estes termos. O utilizador também pode eliminar a sua conta a qualquer momento nas definições da aplicação.</p>
+    <div class="header">
+        <h1>INPAUP</h1>
+        <p>Termos e Condições de Uso</p>
     </div>
+
+    <div class="container">
+        <p class="date">Última atualização: Abril de 2026</p>
+        
+        <p>Bem-vindo à <strong>Inpaup</strong>. Ao aceder à nossa plataforma de comunidades e ecossistemas empresariais, concorda em cumprir estes termos. O nosso objetivo é garantir um ambiente seguro e produtivo para todos os utilizadores.</p>
+
+        <h2>1. Aceitação e Elegibilidade</h2>
+        <p>Ao criar uma conta, declara ter idade legal e capacidade para assumir compromissos contratuais. O uso da plataforma implica a aceitação total destas normas.</p>
+
+        <h2>2. Conduta do Utilizador</h2>
+        <ul>
+            <li><strong>Respeito Mútuo:</strong> É proibido qualquer tipo de assédio, discurso de ódio ou conteúdo violento em grupos e chats.</li>
+            <li><strong>Veracidade:</strong> Compromete-se a fornecer dados reais no seu perfil profissional.</li>
+            <li><strong>Segurança:</strong> É proibida a tentativa de acesso não autorizado a sistemas da Inpaup ou dados de outros utilizadores.</li>
+        </ul>
+
+        <h2>3. Propriedade de Conteúdo</h2>
+        <p>O utilizador mantém os direitos sobre o que publica, mas concede à Inpaup uma licença para exibir e distribuir esse conteúdo dentro das funcionalidades da aplicação (como feeds de comunidades e alianças).</p>
+
+        <h2>4. Limitação de Responsabilidade</h2>
+        <p>A Inpaup funciona como um facilitador de conexões. Não nos responsabilizamos por acordos externos realizados entre membros ou empresas dentro das comunidades.</p>
+
+        <div class="warning-box">
+            <strong>Atenção:</strong> A violação destes termos pode resultar na suspensão imediata ou banimento definitivo da conta, dependendo da gravidade da infração detetada pela nossa moderação.
+        </div>
+
+        <h2>5. Suporte ao Utilizador</h2>
+        <p>Para reportar abusos ou esclarecer dúvidas sobre estas condições, pode contactar-nos diretamente:</p>
+        <p style="font-size: 1.1em; color: var(--primary-green); font-weight: bold;">
+            📞 +244 922 411 734 | 244 928178159
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2026 Inpaup. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
