@@ -5,59 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade - Inpaup</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        .container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { color: #2BB673; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #2BB673; margin-top: 30px; }
-        .date { font-style: italic; color: #666; font-size: 0.9em; }
-        ul { margin-top: 0; }
-        li { margin-bottom: 8px; }
+        :root {
+            --primary-green: #2BB673;
+            --bg-color: #f4f7f6;
+            --text-main: #333333;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: -30px auto 40px auto;
+            background-color: var(--card-bg);
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        h2 {
+            color: var(--primary-green);
+            border-bottom: 2px solid #eef7f2;
+            padding-bottom: 10px;
+            margin-top: 35px;
+            font-size: 1.4em;
+        }
+        .date {
+            text-align: right;
+            font-style: italic;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        ul li:before {
+            content: '✓';
+            color: var(--primary-green);
+            font-weight: bold;
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        .contact-box {
+            background-color: #eef9f3;
+            border-left: 5px solid var(--primary-green);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
+        .contact-box p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 25px;
+            }
+            .header {
+                padding: 30px 20px 50px 20px;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>INPAUP</h1>
+        <p>Políticas de Privacidade e Segurança</p>
+    </div>
+
     <div class="container">
-        <h1>Política de Privacidade</h1>
-        <p class="date">Última atualização: 15 de Dezembro de 2025</p>
+        <p class="date">Última atualização: Abril de 2026</p>
         
-        <p>A sua privacidade é a nossa prioridade na inpaup. Esta política descreve como recolhemos, usamos e protegemos as suas informações pessoais enquanto usa a nossa plataforma de comunidades e grupos.</p>
+        <p>A sua privacidade é a nossa prioridade na <strong>Inpaup</strong>. Esta política descreve como recolhemos, usamos e protegemos as suas informações pessoais enquanto utiliza a nossa plataforma imersiva de comunidades.</p>
 
         <h2>1. Dados que Recolhemos</h2>
-        <p>Para fornecer os nossos serviços, recolhemos as seguintes informações:</p>
         <ul>
-            <li><strong>Dados de Conta:</strong> Nome completo, endereço de e-mail, número de telefone, data de nascimento e palavra-passe encriptada.</li>
-            <li><strong>Perfil:</strong> Foto de perfil, biografia, profissão, localização e interesses selecionados.</li>
-            <li><strong>Conteúdo Gerado:</strong> Publicações, comentários, mensagens de chat (texto e áudio), fotos, vídeos e documentos partilhados em grupos ou conversas privadas.</li>
-            <li><strong>Dados do Dispositivo:</strong> Modelo do dispositivo, sistema operativo, endereço IP e identificadores únicos para fins de segurança e auditoria.</li>
+            <li><strong>Dados de Conta:</strong> Nome completo, endereço de e-mail e contacto telefónico.</li>
+            <li><strong>Perfil e Identidade:</strong> Foto de perfil, biografia, profissão e interesses selecionados.</li>
+            <li><strong>Conteúdo Gerado:</strong> Publicações, interações e mensagens partilhadas em grupos ou chats privados.</li>
         </ul>
 
         <h2>2. Como Usamos os Seus Dados</h2>
-        <p>Utilizamos as informações recolhidas para:</p>
-        <ul>
-            <li>Criar e gerir a sua conta e identidade na plataforma.</li>
-            <li>Conectar consigo grupos e comunidades relevantes baseados nos seus interesses e localização.</li>
-            <li>Permitir a comunicação em tempo real através de chats e mensagens de voz.</li>
-            <li>Personalizar o seu feed de notícias e sugestões de grupos.</li>
-            <li>Garantir a segurança da plataforma, detetar fraudes e moderar conteúdo inadequado.</li>
-        </ul>
+        <p>As suas informações são utilizadas exclusivamente para melhorar a sua experiência, gerir a sua identidade digital, personalizar o feed com comunidades e empresas relevantes, e garantir a integridade da plataforma através de controlos de acesso rigorosos.</p>
 
-        <h2>3. Partilha de Informações</h2>
-        <ul>
-            <li>O seu perfil básico (Nome, Username, Foto) é público e visível para outros utilizadores.</li>
-            <li>O conteúdo que publica em grupos abertos é visível para todos os membros.</li>
-            <li>Em grupos privados, o conteúdo é visível apenas para os membros aprovados.</li>
-            <li>Não vendemos os seus dados pessoais a terceiros para fins de marketing.</li>
-        </ul>
+        <h2>3. Os Seus Direitos e Controlo</h2>
+        <p>O utilizador tem total controlo sobre a sua presença na aplicação. Pode editar as informações do seu perfil, gerir a visibilidade dos seus dados, solicitar o download de uma cópia das suas informações ou eliminar a sua conta de forma permanente através do menu de definições.</p>
 
-        <h2>4. Segurança e Armazenamento</h2>
-        <p>Implementamos medidas de segurança robustas para proteger os seus dados. Utilizamos encriptação na transmissão de dados e controlos de acesso rigorosos (Row Level Security) para garantir que apenas utilizadores autorizados acedem a conteúdos privados e mensagens diretas.</p>
-
-        <h2>5. Os Seus Direitos</h2>
-        <p>Você tem o direito de:</p>
-        <ul>
-            <li>Aceder e editar o seu perfil a qualquer momento através das definições da aplicação.</li>
-            <li>Solicitar o download de uma cópia dos seus dados.</li>
-            <li>Eliminar a sua conta permanentemente. Ao fazer isso, as suas publicações, mensagens diretas e histórico de interações serão removidos ou anonimizados irreversivelmente.</li>
-        </ul>
+        <h2>4. Contacto e Suporte Técnico</h2>
+        <div class="contact-box">
+            <p>Se tiver alguma dúvida sobre como protegemos os seus dados ou precisar de assistência, a nossa equipa está disponível através dos contactos oficiais:</p>
+            <p style="margin-top: 15px; font-size: 1.1em;">📞 <strong>+244 922 725 904</strong> &nbsp;|&nbsp; <strong>+244 935 034 867</strong></p>
+        </div>
     </div>
+
+    <footer>
+        &copy; 2026 Inpaup. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
